@@ -204,7 +204,7 @@ if(m==="light"||m==="dark")document.documentElement.setAttribute("data-theme",m)
     <p class="sub">{sub}</p>
     <dl>
       <div><dt>분량</dt><dd>{count}편 · {chars}자</dd></div>
-      <div><dt>집필</dt><dd>SON</dd></div>
+      <div><dt>집필</dt><dd>SOn 글쓰기 엔진</dd></div>
       <div><dt>판정</dt><dd>게이트 종료코드 0</dd></div>
     </dl>
   </header>
