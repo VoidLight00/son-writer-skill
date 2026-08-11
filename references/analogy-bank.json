@@ -1,0 +1,54 @@
+{
+  "_doc": "모델 불변 비유 뱅크. 재현 모드에서 explainer는 비유를 '발명'하지 않고 여기서 '선택'한다. concept_id별 canonical(index 0)을 기본 채택 — 이게 결정론 지점이다. 두 모델이 같은 뱅크에서 같은 canonical을 고르면 비유 발산(놀이공원 vs 자판기)이 사라진다. alternates는 canonical이 문맥상 부적합할 때만, generation_report에 사유 기록 후 사용.",
+  "_rule": "select-not-invent. 뱅크에 없는 개념이면 새 비유를 만들되 반드시 이 파일에 canonical로 등재하고 커밋한다(다음 실행부터 결정론).",
+  "concepts": [
+    {
+      "id": "deterministic-gate",
+      "concept": "결정론 게이트 / 판정권을 사람 감에서 코드로",
+      "canonical": "자판기 — 코인(입력)을 넣으면 누가 눌러도 정해진 것만 나온다. 점원의 기분이 개입하지 않는다.",
+      "alternates": ["놀이공원 입구의 키 재기 막대 — 이 선을 넘어야 탄다, 감독관 기분과 무관", "운전면허 기능시험 채점표 — 항목별 감점이 코드로 정해져 있다"]
+    },
+    {
+      "id": "directive",
+      "concept": "산출물 디렉티브(min/max/style 선언)",
+      "canonical": "택배 상자의 규격 라벨 — 무게·크기가 라벨에 적혀 있고 그 기준으로만 검수한다.",
+      "alternates": ["요리 주문서 — 분량과 맛(문체)을 미리 못박아 주방에 넘긴다"]
+    },
+    {
+      "id": "model-invariance",
+      "concept": "모델 불변 계약 — 누가 만들어도 같은 규격",
+      "canonical": "표준 규격 나사 — 어느 공장에서 깎아도 같은 너트에 맞물린다. 만든 사람이 달라도 규격이 같다.",
+      "alternates": []
+    },
+    {
+      "id": "sentence-variety-r6",
+      "concept": "R6 문장 길이 다양화(단문·장문 필수)",
+      "canonical": "악보의 리듬 — 같은 길이 음표만 이어지면 기계음처럼 들린다. 길고 짧음이 섞여야 사람 숨결이 된다.",
+      "alternates": []
+    },
+    {
+      "id": "vocab-cap-r10",
+      "concept": "R10 고빈도 AI 어휘 캡",
+      "canonical": "조미료 한 꼬집 — 같은 조미료(MSG)를 계속 들이부으면 무슨 요리든 같은 맛이 난다. 그 습관을 막는 것.",
+      "alternates": []
+    },
+    {
+      "id": "parallel-cap-r11",
+      "concept": "R11 'X가 아니라 Y' 대구 캡",
+      "canonical": "개그맨의 유행어 — 모두가 똑같은 말버릇으로 끝맺으면 누가 썼는지 티가 난다. 그 버릇에 상한을 둔다.",
+      "alternates": []
+    },
+    {
+      "id": "hard-soft-boundary",
+      "concept": "HARD 게이트와 SOFT 지침의 경계",
+      "canonical": "운전면허 시험 — 채점표(HARD)는 항목별 통과/탈락이 코드로 정해지고, 감독관의 인상(SOFT)은 점수화되지 않는다.",
+      "alternates": []
+    },
+    {
+      "id": "vendoring",
+      "concept": "원본 규칙 vendoring(references/에 사본 보관)",
+      "canonical": "남의 요리책에서 필요한 페이지만 복사해 내 서랍에 넣어 두는 것 — 출처와 판(commit)을 함께 적어 둔다.",
+      "alternates": []
+    }
+  ]
+}

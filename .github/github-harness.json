@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "profile": "public-full",
+  "intent": {
+    "visibility": "public",
+    "images": "required",
+    "languages": [
+      "en",
+      "ko"
+    ],
+    "release": "not_requested",
+    "description": "Fail-closed Korean writing skill for Claude Code with measurable style gates and a verified ebook",
+    "homepage": "https://github.com/VoidLight00/son-writer-skill",
+    "topics": [
+      "ai-writing",
+      "claude-code",
+      "fail-closed",
+      "korean-writing",
+      "open-source",
+      "quality-gates",
+      "writing-skill"
+    ]
+  },
+  "approvals": {
+    "images": true,
+    "publish": false,
+    "release": false
+  },
+  "local": {
+    "artifacts": "pending",
+    "version": "pending"
+  },
+  "remote": {
+    "push": "pending",
+    "metadata": "pending",
+    "tag": "not_requested",
+    "release": "not_requested",
+    "verification": "pending"
+  },
+  "result": "incomplete"
+}
